@@ -1,0 +1,21 @@
+{
+  "digital.store": "متجر رقمي",
+  "nav.home": "الرئيسية",
+  "nav.products": "المنتجات",
+  "nav.blog": "المدونة",
+  "nav.about": "من نحن",
+  "nav.theme": "الوضع",
+  "footer.rights": "جميع الحقوق محفوظة.",
+  "footer.privacy": "سياسة الخصوصية",
+  "footer.terms": "الشروط والأحكام",
+  "home.new_releases": "إصدارات جديدة",
+  "products.title": "جميع المنتجات الرقمية",
+  "products.subtitle": "حمّل ملفاتك مباشرة بعد الدفع",
+  "product.meta.license": "الترخيص",
+  "product.meta.file_type": "نوع الملف",
+  "product.meta.version": "الإصدار",
+  "cart.title": "سلة المشتريات",
+  "thankyou.title": "شكرًا لك!",
+  "thankyou.subtitle": "ستجد التحميلات في صفحة طلباتك.",
+  "account.orders": "طلباتك"
+}

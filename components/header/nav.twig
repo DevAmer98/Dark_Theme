@@ -1,0 +1,23 @@
+
+<header class="nav">
+  <div class="nav-inner container">
+    <div class="nav-title">
+      {% if setting('logo_image') %}
+        <img src="{{ setting('logo_image') }}" alt="{{ store.name }}" style="height:28px"/>
+      {% else %}
+        <span>{{ store.name }}</span>
+      {% endif %}
+      <span class="badge">{{ 'digital.store'|trans }}</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/">{{ 'nav.home'|trans }}</a>
+      <a href="/products">{{ 'nav.products'|trans }}</a>
+      <a href="/blog">{{ 'nav.blog'|trans }}</a>
+      <a href="/pages/about">{{ 'nav.about'|trans }}</a>
+    </nav>
+    <div class="nav-spacer"></div>
+    <salla-search></salla-search>
+    <salla-user-menu></salla-user-menu>
+    <button class="theme-toggle" data-toggle-theme type="button">{{ 'nav.theme'|trans }}</button>
+  </div>
+</header>

@@ -1,0 +1,12 @@
+
+<section class="container" style="margin-top:40px;">
+  <h2 style="margin:0 0 12px 0">{{ field('heading') }}</h2>
+  <div class="grid cols-3">
+    {% for q in field('quotes') %}
+      <blockquote class="card" style="font-style: italic;">
+        “{{ q.quote }}”
+        <div class="muted" style="margin-top:8px;">— {{ q.author }}</div>
+      </blockquote>
+    {% endfor %}
+  </div>
+</section>

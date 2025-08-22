@@ -1,0 +1,12 @@
+
+<section class="container" style="margin-top:28px;">
+  <div class="grid cols-3">
+    {% for item in field('items') %}
+      <div class="card">
+        <div class="badge">{{ item.icon|default('★') }}</div>
+        <h3 style="margin:8px 0 6px 0">{{ item.title }}</h3>
+        <p class="muted" style="margin:0">{{ item.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

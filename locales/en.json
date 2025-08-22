@@ -1,0 +1,21 @@
+{
+  "digital.store": "Digital store",
+  "nav.home": "Home",
+  "nav.products": "Products",
+  "nav.blog": "Blog",
+  "nav.about": "About",
+  "nav.theme": "Theme",
+  "footer.rights": "All rights reserved.",
+  "footer.privacy": "Privacy Policy",
+  "footer.terms": "Terms of Service",
+  "home.new_releases": "New releases",
+  "products.title": "All digital products",
+  "products.subtitle": "Download instantly after checkout",
+  "product.meta.license": "License",
+  "product.meta.file_type": "File type",
+  "product.meta.version": "Version",
+  "cart.title": "Your cart",
+  "thankyou.title": "Thank you!",
+  "thankyou.subtitle": "Your downloads will be available in your orders.",
+  "account.orders": "Your orders"
+}

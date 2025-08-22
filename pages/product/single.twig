@@ -1,0 +1,30 @@
+
+{% extends "layouts/master.twig" %}
+{% block content %}
+  <section class="grid" style="grid-template-columns: 1.2fr 1fr; gap: 24px;">
+    <div class="card">
+      <h1 style="margin:0 0 8px 0">{{ product.name }}</h1>
+      <p class="muted">{{ product.short_description }}</p>
+      <article class="content">{{ product.description|raw }}</article>
+      <div style="margin-top:12px;">
+        <salla-metadata data='[
+          {"title":"{{ "product.meta.license"|trans }}","value":"{{ product.meta.license|default("Single‑site") }}"},
+          {"title":"{{ "product.meta.file_type"|trans }}","value":"{{ product.meta.file_type|default("ZIP") }}"},
+          {"title":"{{ "product.meta.version"|trans }}","value":"{{ product.meta.version|default(product.sku) }}"}
+        ]'></salla-metadata>
+      </div>
+    </div>
+    <aside class="card">
+      <div class="price" style="font-size:24px; margin-bottom:8px;">
+        {{ product.price_formatted }}
+      </div>
+      <salla-quick-buy product-id="{{ product.id }}"></salla-quick-buy>
+      <div style="margin-top:12px;">
+        <salla-product-availability product-id="{{ product.id }}"></salla-product-availability>
+      </div>
+      <div style="margin-top:12px;">
+        <salla-wishlist-button product-id="{{ product.id }}"></salla-wishlist-button>
+      </div>
+    </aside>
+  </section>
+{% endblock %}

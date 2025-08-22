@@ -1,0 +1,11 @@
+
+{% extends "layouts/master.twig" %}
+{% block content %}
+  <section>
+    <h1 style="margin-bottom:8px">{{ 'products.title'|trans }}</h1>
+    <p class="muted">{{ 'products.subtitle'|trans }}</p>
+  </section>
+  <section style="margin-top:16px;">
+    <salla-products-list></salla-products-list>
+  </section>
+{% endblock %}

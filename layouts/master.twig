@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ locale }}" dir="{{ locale == 'ar' ? 'rtl' : 'ltr' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ store.name }}{% if page.title %} — {{ page.title }}{% endif %}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="{{ asset('styles.css') }}"/>
+    <style>
+      :root { --accent: {{ setting('accent_color') }}; --font-main: {{ setting('font_main') }}; --container: {{ setting('container_width') }}; }
+    </style>
+    {% hook 'head:end' %}
+  </head>
+  <body data-theme="{{ setting('dark_mode') ? 'dark' : 'light' }}">
+    {% include 'components/header/nav.twig' %}
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+    {% include 'components/footer/footer.twig' %}
+    <script src="{{ asset('app.js') }}" defer></script>
+    {% hook 'body:end' %}
+  </body>
+</html>
