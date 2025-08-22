@@ -5,5 +5,8 @@
   "scripts": {
     "preview": "salla theme preview",
     "package": "salla theme package"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9"
   }
 }
