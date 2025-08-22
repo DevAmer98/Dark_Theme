@@ -1,0 +1,9 @@
+{
+  "name": "dark-theme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preview": "salla theme preview",
+    "package": "salla theme package"
+  }
+}
