@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "preview": "salla theme preview",
-    "package": "salla theme package"
+    "package": "salla theme package",
+    "development": "node -e \"console.log('dev noop');setInterval(()=>{},1<<30)\""
   },
   "devDependencies": {
     "esbuild": "^0.25.9"
