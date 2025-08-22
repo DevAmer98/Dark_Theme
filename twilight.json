@@ -1,60 +1,12 @@
 {
   "version": "1.0.0",
   "theme_name": "Dark Digital",
-  "theme_id": "dark-digital",
-  "author": "You",
   "settings": [
-    {
-      "type": "boolean",
-      "id": "dark_mode",
-      "label": "Enable dark mode",
-      "format": "switch",
-      "selected": true
-    },
-    {
-      "type": "string",
-      "id": "accent_color",
-      "label": "Accent color",
-      "format": "color",
-      "value": "#7c5cff"
-    },
-    {
-      "type": "string",
-      "id": "font_main",
-      "label": "Main font",
-      "format": "font",
-      "value": "Inter"
-    },
-    {
-      "type": "select",
-      "id": "container_width",
-      "label": "Container width",
-      "options": [
-        "1200px",
-        "1280px",
-        "1440px"
-      ],
-      "value": "1280px"
-    },
-    {
-      "type": "image",
-      "id": "logo_image",
-      "label": "Logo (dark)",
-      "value": ""
-    },
-    {
-      "type": "image",
-      "id": "logo_image_light",
-      "label": "Logo (light)",
-      "value": ""
-    }
+    { "type": "boolean", "id": "dark_mode", "label": "Enable dark mode", "format": "switch", "selected": true },
+    { "type": "string", "id": "accent_color", "label": "Accent color", "format": "color", "value": "#7c5cff" },
+    { "type": "string", "id": "font_main", "label": "Main font", "format": "font", "value": "Inter" }
   ],
-  "features": [
-    "component-featured-products",
-    "component-products-slider",
-    "component-youtube",
-    "filters"
-  ],
+  "features": ["component-featured-products","component-products-slider","component-youtube","filters"],
   "components": [
     {
       "name": "digital-hero",
@@ -62,111 +14,13 @@
       "icon": "sicon-image-carousel",
       "path": "home.digital-hero",
       "fields": [
-        {
-          "id": "title",
-          "type": "string",
-          "label": "Title",
-          "value": "Level up your toolkit"
-        },
-        {
-          "id": "subtitle",
-          "type": "string",
-          "format": "textarea",
-          "label": "Subtitle",
-          "value": "Premium digital products. Instant download."
-        },
-        {
-          "id": "cta_label",
-          "type": "string",
-          "label": "CTA Label",
-          "value": "Browse products"
-        },
-        {
-          "id": "cta_link",
-          "type": "string",
-          "label": "CTA Link",
-          "format": "url",
-          "value": "/products"
-        },
-        {
-          "id": "bg_image",
-          "type": "string",
-          "format": "image",
-          "label": "Background image",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "name": "feature-cards",
-      "title": "Feature Cards",
-      "icon": "sicon-featured-products",
-      "path": "home.feature-cards",
-      "fields": [
-        {
-          "id": "items",
-          "type": "repeater",
-          "label": "Cards",
-          "fields": [
-            {
-              "id": "icon",
-              "type": "string",
-              "label": "Icon name",
-              "value": "bolt"
-            },
-            {
-              "id": "title",
-              "type": "string",
-              "label": "Title",
-              "value": "Instant download"
-            },
-            {
-              "id": "text",
-              "type": "string",
-              "label": "Text",
-              "value": "Get files immediately after purchase"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "testimonials",
-      "title": "Testimonials",
-      "icon": "sicon-reviews",
-      "path": "common.testimonials",
-      "fields": [
-        {
-          "id": "heading",
-          "type": "string",
-          "label": "Heading",
-          "value": "Loved by creators"
-        },
-        {
-          "id": "quotes",
-          "type": "repeater",
-          "label": "Quotes",
-          "fields": [
-            {
-              "id": "quote",
-              "type": "string",
-              "format": "textarea",
-              "label": "Quote",
-              "value": "Super clean theme, great UX."
-            },
-            {
-              "id": "author",
-              "type": "string",
-              "label": "Author",
-              "value": "Sara"
-            }
-          ]
-        }
+        { "id": "title", "type": "string", "label": "Title", "value": "Level up your toolkit" },
+        { "id": "subtitle", "type": "string", "format": "textarea", "label": "Subtitle", "value": "Premium digital products. Instant download." },
+        { "id": "cta_label", "type": "string", "label": "CTA Label", "value": "Browse products" },
+        { "id": "cta_link", "type": "string", "label": "CTA Link", "format": "url", "value": "/products" },
+        { "id": "bg_image", "type": "string", "format": "image", "label": "Background image", "value": "" }
       ]
     }
   ],
-  "locales": [
-    "en",
-    "ar"
-  ]
+  "locales": ["en","ar"]
 }
