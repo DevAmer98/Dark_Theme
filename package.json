@@ -5,7 +5,8 @@
   "scripts": {
     "preview": "salla theme preview",
     "package": "salla theme package",
-    "development": "node -e \"console.log('ready')\""
+    "development": "node -e \"console.log('ready')\"",
+    "watch": "node -e \"console.log('watch noop');setInterval(()=>{},1<<30)\""
   },
   "devDependencies": {
     "esbuild": "^0.25.9"
