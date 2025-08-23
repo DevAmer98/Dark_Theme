@@ -1,1 +1,9 @@
-/* dark scaffold */ body{background:#0b0b0f;color:#fff}
+:root{--accent:#7c5cff}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:#0b0b0f;color:#fff;font:16px/1.5 Inter,system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:32px}
+.hero{display:grid;place-items:center;min-height:60vh;text-align:center}
+.hero h1{font-weight:700;font-size:42px;margin:0 0 8px}
+.hero p{opacity:.8;margin:0}

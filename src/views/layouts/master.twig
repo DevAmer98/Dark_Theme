@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ locale|default('ar') }}" dir="{{ is_rtl ? 'rtl' : 'ltr' }}">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{{ shop.name ?? 'Dark Theme' }}</title>
+
+    {# IMPORTANT: asset('styles.css') — do NOT prefix with assets/ #}
+    <link rel="stylesheet" href="{{ asset('styles.css') }}">
+  </head>
+  <body style="margin:0;background:#0b0b0f;color:#fff">
+    <header style="padding:12px 20px;border-bottom:1px solid #222">
+      <strong>Dark Theme</strong>
+    </header>
+
+    {# The page content goes here #}
+    {% block content %}{% endblock %}
+
+    <script src="{{ asset('app.js') }}" defer></script>
+  </body>
+</html>
